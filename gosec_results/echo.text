@@ -1,0 +1,46 @@
+Results:
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/echo/echo.go]:
+
+  > [line 55 : column 2] - could not import github.com/labstack/gommon/color (invalid package name: "")
+
+  > [line 56 : column 2] - could not import github.com/labstack/gommon/log (invalid package name: "")
+
+  > [line 57 : column 2] - could not import golang.org/x/crypto/acme (invalid package name: "")
+
+  > [line 58 : column 2] - could not import golang.org/x/crypto/acme/autocert (invalid package name: "")
+
+  > [line 59 : column 2] - could not import golang.org/x/net/http2 (invalid package name: "")
+
+  > [line 60 : column 2] - could not import golang.org/x/net/http2/h2c (invalid package name: "")
+
+
+
+[[97;41m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/echo/echo.go:242[0m] - G101 (CWE-798): Potential hardcoded credentials (Confidence: LOW, Severity: HIGH)
+    241: 	HeaderContentSecurityPolicyReportOnly = "Content-Security-Policy-Report-Only"
+  > 242: 	HeaderXCSRFToken                      = "X-CSRF-Token"
+    243: 	HeaderReferrerPolicy                  = "Referrer-Policy"
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/echo/echo.go:686[0m] - G304 (CWE-22): Potential file inclusion via variable (Confidence: HIGH, Severity: MEDIUM)
+    685: 	case string:
+  > 686: 		return ioutil.ReadFile(v)
+    687: 	case []byte:
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/echo/context.go:392[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    391: 	}
+  > 392: 	f.Close()
+    393: 	return fh, nil
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 13
+  Lines  : 4462
+  Nosec  : 0
+  Issues : [1;31m3[0m
+

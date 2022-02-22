@@ -1,0 +1,75 @@
+Results:
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/auth.go]:
+
+  > [line 13 : column 2] - could not import github.com/gin-gonic/gin/internal/bytesconv (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/context.go]:
+
+  > [line 23 : column 2] - could not import github.com/gin-contrib/sse (invalid package name: "")
+
+  > [line 24 : column 2] - could not import github.com/gin-gonic/gin/binding (invalid package name: "")
+
+  > [line 25 : column 2] - could not import github.com/gin-gonic/gin/render (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/errors.go]:
+
+  > [line 12 : column 2] - could not import github.com/gin-gonic/gin/internal/json (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/gin.go]:
+
+  > [line 19 : column 2] - could not import golang.org/x/net/http2 (invalid package name: "")
+
+  > [line 20 : column 2] - could not import golang.org/x/net/http2/h2c (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/logger.go]:
+
+  > [line 14 : column 2] - "github.com/mattn/go-isatty" imported but not used
+
+  > [line 14 : column 2] - could not import github.com/mattn/go-isatty (invalid package name: "")
+
+  > [line 219 : column 5] - undeclared name: isatty
+
+  > [line 219 : column 35] - undeclared name: isatty
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/recovery.go:124[0m] - G304 (CWE-22): Potential file inclusion via variable (Confidence: HIGH, Severity: MEDIUM)
+    123: 		if file != lastFile {
+  > 124: 			data, err := ioutil.ReadFile(file)
+    125: 			if err != nil {
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/context.go:598[0m] - G307 (CWE-703): Deferring unsafe method "Close" on type "*os.File" (Confidence: HIGH, Severity: MEDIUM)
+    597: 	}
+  > 598: 	defer out.Close()
+    599: 
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/routergroup.go:211[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    210: 		}
+  > 211: 		f.Close()
+    212: 
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/gin/context.go:576[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    575: 	}
+  > 576: 	f.Close()
+    577: 	return fh, err
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 18
+  Lines  : 4405
+  Nosec  : 0
+  Issues : [1;31m4[0m
+

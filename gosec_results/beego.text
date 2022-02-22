@@ -1,0 +1,10 @@
+Results:
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 2
+  Lines  : 47
+  Nosec  : 0
+  Issues : [1;32m0[0m
+

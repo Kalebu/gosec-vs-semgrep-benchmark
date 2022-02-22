@@ -1,0 +1,65 @@
+Results:
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/martini/martini.go]:
+
+  > [line 26 : column 2] - could not import github.com/codegangsta/inject (invalid package name: "")
+
+  > [line 40 : column 4] - m.Map undefined (type *Martini has no field or method Map)
+
+  > [line 41 : column 4] - m.Map undefined (type *Martini has no field or method Map)
+
+  > [line 63 : column 4] - m.Map undefined (type *Martini has no field or method Map)
+
+  > [line 103 : column 4] - c.SetParent undefined (type *context has no field or method SetParent)
+
+  > [line 104 : column 4] - c.MapTo undefined (type *context has no field or method MapTo)
+
+  > [line 105 : column 4] - c.MapTo undefined (type *context has no field or method MapTo)
+
+  > [line 106 : column 4] - c.Map undefined (type *context has no field or method Map)
+
+  > [line 124 : column 4] - m.MapTo undefined (type *Martini has no field or method MapTo)
+
+  > [line 179 : column 15] - c.Invoke undefined (type *context has no field or method Invoke)
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/martini/recovery.go]:
+
+  > [line 123 : column 14] - c.Get undefined (type Context has no field or method Get)
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/martini/return_handler.go]:
+
+  > [line 17 : column 13] - ctx.Get undefined (type Context has no field or method Get)
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/martini/router.go]:
+
+  > [line 131 : column 11] - context.Map undefined (type Context has no field or method Map)
+
+  > [line 138 : column 10] - context.MapTo undefined (type Context has no field or method MapTo)
+
+  > [line 283 : column 4] - c.MapTo undefined (type Context has no field or method MapTo)
+
+  > [line 284 : column 4] - c.MapTo undefined (type Context has no field or method MapTo)
+
+  > [line 408 : column 18] - r.Invoke undefined (type *routeContext has no field or method Invoke)
+
+  > [line 416 : column 12] - r.Get undefined (type *routeContext has no field or method Get)
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/martini/recovery.go:67[0m] - G304 (CWE-22): Potential file inclusion via variable (Confidence: HIGH, Severity: MEDIUM)
+    66: 		if file != lastFile {
+  > 67: 			data, err := ioutil.ReadFile(file)
+    68: 			if err != nil {
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 8
+  Lines  : 1103
+  Nosec  : 0
+  Issues : [1;31m1[0m
+

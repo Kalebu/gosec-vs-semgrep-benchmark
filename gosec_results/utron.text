@@ -1,0 +1,15 @@
+Results:
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/utron/utron.go]:
+
+  > [line 3 : column 8] - could not import github.com/gernest/utron/app (invalid package name: "")
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 2
+  Lines  : 60
+  Nosec  : 0
+  Issues : [1;32m0[0m
+

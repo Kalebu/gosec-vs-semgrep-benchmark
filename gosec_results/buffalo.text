@@ -1,0 +1,210 @@
+Results:
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/app.go]:
+
+  > [line 8 : column 2] - could not import github.com/gobuffalo/envy (invalid package name: "")
+
+  > [line 9 : column 2] - could not import github.com/gorilla/mux (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/buffalo.go]:
+
+  > [line 15 : column 10] - could not import github.com/gobuffalo/buffalo/runtime (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/context.go]:
+
+  > [line 9 : column 2] - could not import github.com/gobuffalo/buffalo/binding (invalid package name: "")
+
+  > [line 10 : column 2] - could not import github.com/gobuffalo/buffalo/internal/httpx (invalid package name: "")
+
+  > [line 11 : column 2] - could not import github.com/gobuffalo/buffalo/render (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/errors.go]:
+
+  > [line 14 : column 2] - could not import github.com/gobuffalo/buffalo/internal/defaults (invalid package name: "")
+
+  > [line 16 : column 2] - could not import github.com/gobuffalo/events (invalid package name: "")
+
+  > [line 17 : column 2] - "github.com/gobuffalo/plush/v4" imported but not used
+
+  > [line 17 : column 2] - could not import github.com/gobuffalo/plush/v4 (invalid package name: "")
+
+  > [line 239 : column 10] - undeclared name: plush
+
+  > [line 240 : column 13] - undeclared name: plush
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/grifts.go]:
+
+  > [line 10 : column 2] - could not import github.com/markbates/grift/grift (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/logger.go]:
+
+  > [line 4 : column 2] - could not import github.com/gobuffalo/logger (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/options.go]:
+
+  > [line 9 : column 2] - could not import github.com/fatih/color (invalid package name: "")
+
+  > [line 11 : column 2] - could not import github.com/gobuffalo/buffalo/worker (invalid package name: "")
+
+  > [line 14 : column 2] - "github.com/gobuffalo/pop/v6" imported but not used
+
+  > [line 14 : column 2] - could not import github.com/gobuffalo/pop/v6 (invalid package name: "")
+
+  > [line 15 : column 2] - could not import github.com/gobuffalo/pop/v6/logging (invalid package name: "")
+
+  > [line 16 : column 2] - could not import github.com/gorilla/sessions (invalid package name: "")
+
+  > [line 17 : column 2] - could not import github.com/markbates/oncer (invalid package name: "")
+
+  > [line 138 : column 2] - undeclared name: pop
+
+  > [line 139 : column 7] - undeclared name: pop
+
+  > [line 150 : column 6] - undeclared name: pop
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/plugins.go]:
+
+  > [line 10 : column 2] - could not import github.com/gobuffalo/buffalo/plugins (invalid package name: "")
+
+  > [line 14 : column 2] - could not import github.com/markbates/safe (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/request_logger.go]:
+
+  > [line 9 : column 11] - could not import github.com/dustin/go-humanize (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/route_info.go]:
+
+  > [line 12 : column 2] - could not import github.com/gobuffalo/flect (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/route_mappings.go]:
+
+  > [line 14 : column 2] - could not import github.com/gobuffalo/flect/name (invalid package name: "")
+
+  > [line 15 : column 2] - could not import github.com/gorilla/handlers (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/server.go]:
+
+  > [line 11 : column 2] - could not import github.com/gobuffalo/buffalo/servers (invalid package name: "")
+
+  > [line 13 : column 2] - could not import github.com/markbates/refresh/refresh/web (invalid package name: "")
+
+  > [line 14 : column 2] - could not import github.com/markbates/sigtx (invalid package name: "")
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/route_info.go:90[0m] - G203 (CWE-79): this method will not auto-escape HTML. Verify data is well formed. (Confidence: LOW, Severity: MEDIUM)
+    89: 
+  > 90: 		return template.HTML(result), nil
+    91: 	}
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/plugins.go:44[0m] - G204 (CWE-78): Subprocess launched with a potential tainted input or cmd arguments (Confidence: HIGH, Severity: MEDIUM)
+    43: 							}
+  > 44: 							cmd := exec.Command(c.Binary, c.UseCommand, string(b))
+    45: 							cmd.Stderr = os.Stderr
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/wrappers.go:85[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    84: 		}
+  > 85: 		h(c)
+    86: 	}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/server.go:89[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    88: 			if err := s.Start(ctx, a); err != nil {
+  > 89: 				a.Stop(err)
+    90: 			}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/server.go:80[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    79: 			if err := a.Worker.Start(ctx); err != nil {
+  > 80: 				a.Stop(err)
+    81: 			}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/route_mappings.go:330[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    329: 			eh := a.ErrorHandlers.Get(http.StatusBadRequest)
+  > 330: 			eh(http.StatusBadRequest, err, a.newContext(RouteInfo{}, w, r))
+    331: 			return
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/route_mappings.go:129[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    128: 			eh := a.ErrorHandlers.Get(http.StatusNotFound)
+  > 129: 			eh(http.StatusNotFound, fmt.Errorf("could not find %s", r.URL.Path), a.newContext(RouteInfo{}, w, r))
+    130: 			return
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/route_info.go:117[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    116: 		c.Response().WriteHeader(status)
+  > 117: 		c.Response().Write([]byte(err.Error()))
+    118: 	}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/grifts.go:114[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    113: 		}
+  > 114: 		w.Flush()
+    115: 		return nil
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/flash.go:52[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    51: 		if f := session.Get(flashKey); f != nil {
+  > 52: 			json.Unmarshal(f.([]byte), &result.data)
+    53: 		}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/errors.go:184[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    183: 			responseBody := productionErrorResponseFor(status)
+  > 184: 			c.Response().Write(responseBody)
+    185: 			return nil
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/errors.go:140[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    139: 			c.Response().WriteHeader(http.StatusInternalServerError)
+  > 140: 			c.Response().Write([]byte(err.Error()))
+    141: 		}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/errors.go:100[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    99: 				eh := a.ErrorHandlers.Get(http.StatusInternalServerError)
+  > 100: 				eh(http.StatusInternalServerError, err, c)
+    101: 			}
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/buffalo/app.go:40[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    39: func New(opts Options) *App {
+  > 40: 	LoadPlugins()
+    41: 	envy.Load()
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 27
+  Lines  : 2797
+  Nosec  : 0
+  Issues : [1;31m14[0m
+

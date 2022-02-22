@@ -1,0 +1,63 @@
+Results:
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/fiber/app.go]:
+
+  > [line 31 : column 2] - could not import github.com/gofiber/fiber/v2/internal/colorable (invalid package name: "")
+
+  > [line 32 : column 2] - could not import github.com/gofiber/fiber/v2/internal/go-json (invalid package name: "")
+
+  > [line 32 : column 2] - "github.com/gofiber/fiber/v2/internal/go-json" imported but not used
+
+  > [line 33 : column 2] - could not import github.com/gofiber/fiber/v2/internal/isatty (invalid package name: "")
+
+  > [line 34 : column 2] - could not import github.com/gofiber/fiber/v2/utils (invalid package name: "")
+
+  > [line 35 : column 2] - could not import github.com/valyala/fasthttp (invalid package name: "")
+
+  > [line 505 : column 28] - undeclared name: json
+
+  > [line 508 : column 28] - undeclared name: json
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/fiber/client.go]:
+
+  > [line 19 : column 2] - "github.com/gofiber/fiber/v2/internal/go-json" imported but not used
+
+  > [line 473 : column 19] - undeclared name: json
+
+  > [line 813 : column 19] - undeclared name: json
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/fiber/ctx.go]:
+
+  > [line 16 : column 2] - "net" imported but not used
+
+  > [line 26 : column 2] - could not import github.com/gofiber/fiber/v2/internal/bytebufferpool (invalid package name: "")
+
+  > [line 27 : column 2] - could not import github.com/gofiber/fiber/v2/internal/dictpool (invalid package name: "")
+
+  > [line 28 : column 2] - "github.com/gofiber/fiber/v2/internal/go-json" imported but not used
+
+  > [line 29 : column 2] - could not import github.com/gofiber/fiber/v2/internal/schema (invalid package name: "")
+
+  > [line 708 : column 14] - undeclared name: json
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/fiber/error.go]:
+
+  > [line 4 : column 2] - could not import github.com/gofiber/fiber/v2/internal/go-json/errors (invalid package name: "")
+
+
+Golang errors in file: [/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/fiber/prefork.go]:
+
+  > [line 14 : column 2] - could not import github.com/valyala/fasthttp/reuseport (invalid package name: "")
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 9
+  Lines  : 5729
+  Nosec  : 7
+  Issues : [1;32m0[0m
+

@@ -1,0 +1,66 @@
+Results:
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/static.go:25[0m] - G304 (CWE-22): Potential file inclusion via variable (Confidence: HIGH, Severity: MEDIUM)
+    24: func readFile(filename string) (string, error) {
+  > 25: 	body, err := ioutil.ReadFile(filename)
+    26: 	return string(body), err
+
+
+
+[[30;43m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/sessions.go:6[0m] - G505 (CWE-327): Blocklisted import crypto/sha1: weak cryptographic primitive (Confidence: HIGH, Severity: MEDIUM)
+    5: 	"crypto/hmac"
+  > 6: 	"crypto/sha1"
+    7: 	"encoding/base64"
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/show_errors.go:28[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    27: 				buffer := bytes.NewBufferString("")
+  > 28: 				errorTemplate.Execute(buffer, struct{ Error string }{fmt.Sprintf("%s", err)})
+    29: 				status = 500
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/sessions.go:129[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    128: 	encoder.Write([]byte(value))
+  > 129: 	encoder.Close()
+    130: 	return dePad64(buffer.String())
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/sessions.go:128[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    127: 	encoder := base64.NewEncoder(base64.URLEncoding, buffer)
+  > 128: 	encoder.Write([]byte(value))
+    129: 	encoder.Close()
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/sessions.go:113[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    112: 	sis := sessionItemsFromMap(value)
+  > 113: 	encoder.Encode(sis)
+    114: 	return buffer.String()
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/sessions.go:70[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    69: 	sis := sessionItems{}
+  > 70: 	decoder.Decode(&sis)
+    71: 
+
+
+
+[[37;40m/home/kalebu/Work/Remote work/Freelance Writer/Draft.dev/GRPC Python/Gosec vs semgrep/frameworks/mango/mango.go:137[0m] - G104 (CWE-703): Errors unhandled. (Confidence: HIGH, Severity: LOW)
+    136: 		w.WriteHeader(int(status))
+  > 137: 		w.Write([]byte(body))
+    138: 	}
+
+
+
+[1;36mSummary:[0m
+  Gosec  : dev
+  Files  : 10
+  Lines  : 1208
+  Nosec  : 0
+  Issues : [1;31m8[0m
+
